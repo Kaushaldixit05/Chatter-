@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title:"Chattora",
       theme: ThemeData(
-        appBarTheme: AppBarTheme(
+        appBarTheme: const AppBarTheme(
           elevation: 1,
           centerTitle: true,
           titleTextStyle: TextStyle(fontWeight: FontWeight.normal,fontSize: 19,color:Colors.black ),

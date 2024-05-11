@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class Home_Screen extends StatefulWidget {
@@ -12,12 +13,22 @@ class _Home_ScreenState extends State<Home_Screen> {
   Widget build(BuildContext context) {
     return Scaffold(
     appBar: AppBar(
-      elevation: 1,
-      centerTitle: true,
-      title: Text("CHATORA",style: TextStyle(fontWeight: FontWeight.normal,fontSize: 19,color:Colors.black ),),
+      leading: Icon(CupertinoIcons.home),
+      title:const Text('CHATORA'),
+      actions: [
+        IconButton(onPressed: (){}, icon: const Icon(Icons.search)),
+        IconButton(onPressed: (){}, icon: const Icon(Icons.more_vert))
+      ],
 
-      backgroundColor: Colors.white,
     ),
-    );
+      floatingActionButton: Padding(
+        padding: const EdgeInsets.all(16.0), // Adjust padding as desired
+        child: FloatingActionButton(
+          onPressed: () {
+            // Your action here
+          },
+          child: const Icon(Icons.add_comment_rounded),
+        ),
+      ),    );
   }
 }
