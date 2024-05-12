@@ -1,0 +1,23 @@
+import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
+
+class Login_Screen extends StatefulWidget {
+  const Login_Screen({super.key});
+
+  @override
+  State<Login_Screen> createState() => _Login_ScreenState();
+}
+
+class _Login_ScreenState extends State<Login_Screen> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        automaticallyImplyLeading: false,
+        title:const Text('Welcome to Chatora '),
+       
+      ),
+      body: Stack(children: [Image.asset('images/chat.png')],),
+    );
+  }
+}

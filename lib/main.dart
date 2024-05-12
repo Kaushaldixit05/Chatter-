@@ -1,4 +1,4 @@
-import 'package:chatter/screens/home_screen.dart';
+import 'package:chatter/screens/auth/login_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -22,7 +22,7 @@ class MyApp extends StatelessWidget {
 
         )
       ),
-      home: const Home_Screen()
+      home: const Login_Screen()
     );
   }
 }
